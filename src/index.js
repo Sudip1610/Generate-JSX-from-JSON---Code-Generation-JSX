@@ -46,7 +46,7 @@ function generateCodeFromObject(obj) {
     }
   };
 
-  return jsonToJSX(JSON.parse(obj)).toString();
+  return jsonToJSX(obj).toString();
 }
 
 module.exports = generateCodeFromObject;
