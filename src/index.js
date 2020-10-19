@@ -30,7 +30,7 @@ function generateCodeFromObject(obj) {
 
     if (data.children.length === 0) {
       return `
-          <${data.name}${style}/>
+          < ${data.name}${style}/ >
           `;
     } else {
       let childArray = (data.children || []).map((childData) => {
@@ -39,9 +39,9 @@ function generateCodeFromObject(obj) {
       let childString = childArray.join(" ");
 
       return `
-          <${data.name} ${style}>
+          < ${data.name} ${style} >
             ${childString}
-          </${data.name}>
+          < /${data.name} >
           `;
     }
   };
