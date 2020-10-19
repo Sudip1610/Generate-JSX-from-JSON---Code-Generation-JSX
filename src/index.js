@@ -41,7 +41,7 @@ function generateCodeFromObject(obj) {
       return `
           <${data.name} ${style}>
             ${childString}
-          <${data.name}/>
+          </${data.name}>
           `;
     }
   };
